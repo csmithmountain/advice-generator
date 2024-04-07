@@ -9,3 +9,7 @@ Challenge from frontendmentor.io to create a advice generator that's responsive 
 ## Desktop View
 
 ![](./public/CleanShot%202024-04-07%20at%2017.41.04@2x.png)
+
+### Hover
+
+![](./public//CleanShot%202024-04-07%20at%2017.48.48@2x.png)
