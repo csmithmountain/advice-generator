@@ -1,0 +1,105 @@
+.footer {
+  position: fixed; /* Fix the footer position */
+  bottom: 2em; /* Position at the bottom of the viewport */
+  width: 100%; /* Take full width of the viewport */
+  text-align: center; /* Center the content horizontally */
+}
+
+.container {
+  display: flex;
+  flex-direction: column; /* Ensure content stacks vertically */
+  align-items: center; /* Center content horizontally */
+  max-width: 60%;
+  margin: 2em auto; /* Center horizontally */
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.advice {
+  background-color: hsl(217, 19%, 24%);
+  padding: 2em;
+  width: 100%;
+  border-radius: 15px;
+  text-align: center;
+  margin-top: 2em; /* Increase top margin */
+  margin-bottom: -1em; /* Pull bottom margin up to overlap button */
+}
+
+.mobile-divider {
+  display: block; /* Show mobile image by default */
+  width: 100%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.desktop-divider {
+  display: none; /* Hide desktop image by default */
+  margin-top: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.7em;
+  width: 90%;
+}
+
+.advice-text {
+  color: hsl(193, 38%, 86%);
+  font-size: 1em;
+}
+
+.advice-number {
+  color: hsl(150, 100%, 66%);
+  font-size: 0.5em;
+}
+
+.dice-button {
+  background-color: hsl(150, 100%, 66%);
+  border-radius: 50%; /* Make it circular */
+  width: 3.5em; /* Set a fixed width and height for the circular button */
+  height: 3.5em;
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  margin-top: -0.3em; /* Pull button up to overlap advice container */
+  z-index: 1; /* Ensure button is above advice container */
+  position: relative; /* Enable z-index to work */
+  border: none; /* Remove border */
+}
+
+@media (min-width: 768px) {
+  .advice-text {
+    font-size: 1.3em; /* Increase font size on desktop */
+  }
+
+  .advice-number {
+    font-size: 0.8em; /* Increase font size on desktop */
+  }
+
+  .mobile-divider {
+    display: none; /* Hide mobile image on desktop */
+  }
+
+  .desktop-divider {
+    display: block; /* Show desktop image on desktop */
+  }
+
+  .dice-button {
+    box-shadow: 0 0 10px 5px rgba(0, 255, 0, 0); /* Initial shadow color is transparent */
+    transition: box-shadow 0.3s ease; /* Add transition for smooth effect */
+  }
+
+  .dice-button:hover {
+    /* Modify the box-shadow on hover to create the glow effect */
+    box-shadow: 0 0 20px 5px hsl(150, 100%, 66%); /* Green glow effect */
+    cursor: pointer;
+  }
+
+  .container {
+    max-width: 40%;
+  }
+}
