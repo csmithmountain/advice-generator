@@ -10,7 +10,8 @@ function Footer() {
         >
           Frontend Mentor
         </a>
-        . Coded by <a href="#">c.smithmountain</a>.
+        . Coded by{' '}
+        <a href="https://github.com/csmithmountain">c.smithmountain</a>.
       </div>
     </div>
   );
