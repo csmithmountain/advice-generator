@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
-/* <uniquifier>: Use a unique and descriptive class name
-<weight>: Use a value from 200 to 800 */
-
 :root {
   font-family: 'Manrope', sans-serif;
   font-optical-sizing: auto;

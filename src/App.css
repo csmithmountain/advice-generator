@@ -1,16 +1,16 @@
 .footer {
-  position: fixed; /* Fix the footer position */
-  bottom: 2em; /* Position at the bottom of the viewport */
-  width: 100%; /* Take full width of the viewport */
-  text-align: center; /* Center the content horizontally */
+  position: fixed;
+  bottom: 2em;
+  width: 100%;
+  text-align: center;
 }
 
 .container {
   display: flex;
-  flex-direction: column; /* Ensure content stacks vertically */
-  align-items: center; /* Center content horizontally */
+  flex-direction: column;
+  align-items: center;
   max-width: 60%;
-  margin: 2em auto; /* Center horizontally */
+  margin: 2em auto;
 }
 
 .attribution {
@@ -27,19 +27,19 @@
   width: 100%;
   border-radius: 15px;
   text-align: center;
-  margin-top: 2em; /* Increase top margin */
-  margin-bottom: -1em; /* Pull bottom margin up to overlap button */
+  margin-top: 2em;
+  margin-bottom: -1em;
 }
 
 .mobile-divider {
-  display: block; /* Show mobile image by default */
+  display: block;
   width: 100%;
   margin-top: 1em;
   margin-bottom: 1em;
 }
 
 .desktop-divider {
-  display: none; /* Hide desktop image by default */
+  display: none;
   margin-top: 1em;
   margin-left: auto;
   margin-right: auto;
@@ -59,43 +59,42 @@
 
 .dice-button {
   background-color: hsl(150, 100%, 66%);
-  border-radius: 50%; /* Make it circular */
-  width: 3.5em; /* Set a fixed width and height for the circular button */
+  border-radius: 50%;
+  width: 3.5em;
   height: 3.5em;
-  display: flex; /* Use flexbox for centering */
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  margin-top: -0.3em; /* Pull button up to overlap advice container */
-  z-index: 1; /* Ensure button is above advice container */
-  position: relative; /* Enable z-index to work */
-  border: none; /* Remove border */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -0.3em;
+  z-index: 1;
+  position: relative;
+  border: none;
 }
 
 @media (min-width: 768px) {
   .advice-text {
-    font-size: 1.3em; /* Increase font size on desktop */
+    font-size: 1.3em;
   }
 
   .advice-number {
-    font-size: 0.8em; /* Increase font size on desktop */
+    font-size: 0.8em;
   }
 
   .mobile-divider {
-    display: none; /* Hide mobile image on desktop */
+    display: none;
   }
 
   .desktop-divider {
-    display: block; /* Show desktop image on desktop */
+    display: block;
   }
 
   .dice-button {
-    box-shadow: 0 0 10px 5px rgba(0, 255, 0, 0); /* Initial shadow color is transparent */
-    transition: box-shadow 0.3s ease; /* Add transition for smooth effect */
+    box-shadow: 0 0 10px 5px rgba(0, 255, 0, 0);
+    transition: box-shadow 0.3s ease;
   }
 
   .dice-button:hover {
-    /* Modify the box-shadow on hover to create the glow effect */
-    box-shadow: 0 0 20px 5px hsl(150, 100%, 66%); /* Green glow effect */
+    box-shadow: 0 0 20px 5px hsl(150, 100%, 66%);
     cursor: pointer;
   }
 
